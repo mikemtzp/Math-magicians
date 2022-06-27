@@ -7,8 +7,6 @@
 - Babel
 - Linters: Stylelint & ESlint
 
-## 💻 [Live demo](https://mikemtzp.github.io/Math-magicians/build/)
-
 ## 🧮 Prerequisites
 
 ### Setup
