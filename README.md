@@ -9,6 +9,10 @@
 
 ## 🧮 Prerequisites
 
+### Install
+
+`npm i big-js`
+
 ### Setup
 
 Follow these steps on your console to properly clone this repository on your desktop:

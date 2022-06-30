@@ -1,36 +1,51 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 0 };
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.updateCalc = this.updateCalc.bind(this);
+  }
+
+  updateCalc = (symbol) => {
+    this.setState((prevState) => (calculate(prevState, symbol)));
   }
 
   render() {
-    const { value } = this.state;
+    const { total, next, operation } = this.state;
+    const stateNull = () => !total && !next && !operation;
+    const showOperation = () => {
+      if (operation) return `${total} ${operation} ${next || ''}`;
+      return next || total;
+    };
     return (
       <div className="calculator">
-        <div className="input">{value}</div>
+        <div className="input">{stateNull() ? '0' : showOperation()}</div>
         <div className="calculator-body">
-          <button className="calculator-buttons" type="button">AC</button>
-          <button className="calculator-buttons" type="button">+/&minus;</button>
-          <button className="calculator-buttons" type="button">%</button>
-          <button className="calculator-buttons operation" type="button">&divide;</button>
-          <button className="calculator-buttons" type="button">7</button>
-          <button className="calculator-buttons" type="button">8</button>
-          <button className="calculator-buttons" type="button">9</button>
-          <button className="calculator-buttons operation" type="button">&times;</button>
-          <button className="calculator-buttons" type="button">4</button>
-          <button className="calculator-buttons" type="button">5</button>
-          <button className="calculator-buttons" type="button">6</button>
-          <button className="calculator-buttons operation" type="button">&minus;</button>
-          <button className="calculator-buttons" type="button">1</button>
-          <button className="calculator-buttons" type="button">2</button>
-          <button className="calculator-buttons" type="button">3</button>
-          <button className="calculator-buttons operation" type="button">+</button>
-          <button className="calculator-buttons cero-button" type="button">0</button>
-          <button className="calculator-buttons" type="button">.</button>
-          <button className="calculator-buttons operation" type="button">=</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('AC'); }}>AC</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('+/-'); }}>+/-</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('%'); }}>%</button>
+          <button className="calculator-buttons operation" type="button" onClick={() => { this.updateCalc('÷'); }}>÷</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('7'); }}>7</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('8'); }}>8</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('9'); }}>9</button>
+          <button className="calculator-buttons operation" type="button" onClick={() => { this.updateCalc('x'); }}>x</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('4'); }}>4</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('5'); }}>5</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('6'); }}>6</button>
+          <button className="calculator-buttons operation" type="button" onClick={() => { this.updateCalc('-'); }}>-</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('1'); }}>1</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('2'); }}>2</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('3'); }}>3</button>
+          <button className="calculator-buttons operation" type="button" onClick={() => { this.updateCalc('+'); }}>+</button>
+          <button className="calculator-buttons cero-button" type="button" onClick={() => { this.updateCalc('0'); }}>0</button>
+          <button className="calculator-buttons" type="button" onClick={() => { this.updateCalc('.'); }}>.</button>
+          <button className="calculator-buttons operation" type="button" onClick={() => { this.updateCalc('='); }}>=</button>
         </div>
       </div>
     );
