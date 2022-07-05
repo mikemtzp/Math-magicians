@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 
 const Navbar = () => (
   <header>
-    <h1><a href="/">Math Magicians</a></h1>
+    <h1><a href="/" className="logo">Math Magicians</a></h1>
     <ul>
       <li>
         <a href="/home">Home</a>
@@ -11,7 +11,7 @@ const Navbar = () => (
         <a href="/calculator">Calculator</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a href="/quote">Quote</a>
       </li>
     </ul>
   </header>
