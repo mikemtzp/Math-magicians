@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section-title {
+  margin: 2rem;
+  font-size: 3rem;
 }
 
 .calculator {
-  min-width: 400px;
+  min-width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
