@@ -1,0 +1,13 @@
+.home-section {
+  margin: 2rem;
+  width: 80%;
+}
+
+.home-title {
+  font-size: 3rem;
+}
+
+.home-p {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
