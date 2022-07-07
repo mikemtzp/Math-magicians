@@ -12,6 +12,7 @@
 ### Install
 
 `npm i big-js`
+`npm install react-test-renderer`
 
 ### Setup
 
