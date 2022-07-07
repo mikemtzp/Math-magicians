@@ -41,6 +41,16 @@ Run 'npm run build' to build the code after editing it.
 - Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
 - LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
 
+### Ulises Largaespada
+- GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
+- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
+- LinkedIn: [Ulises Largaespada](https://www.linkedin.com/in/ulises-largaespada-45570b1a4/)
+
+### Jesús Vázquez
+- GitHub: [@jevazquezb](https://github.com/jevazquezb)
+- Twitter: [@javb_1187](https://twitter.com/javb_1187)
+- LinkedIn: [@jevazquezb](https://www.linkedin.com/in/jevazquezb)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
