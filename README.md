@@ -7,12 +7,17 @@
 - Babel
 - Linters: Stylelint & ESlint
 
+## 💻 Live demo
+- [Heroku](https://math-magicians-mike.herokuapp.com/)
+- [Netlify](https://math-magicians-mike.netlify.app/)
+
 ## 🧮 Prerequisites
 
 ### Install
-
-`npm i big-js`
-`npm install react-test-renderer`
+```
+npm i big-js
+npm install react-test-renderer
+```
 
 ### Setup
 
