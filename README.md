@@ -4,6 +4,7 @@
 ## 🛠️ Built With
 
 - React JS
+- Jest
 - Babel
 - Linters: Stylelint & ESlint
 
