@@ -9,7 +9,7 @@
 
 ## 💻 Live demo
 - [Heroku](https://math-magicians-mike.herokuapp.com/)
-- [Netlify](https://math-magicians-mike.netlify.app/)
+- [Netlify](https://mathmagicians-mikemtzp.netlify.app/)
 
 ## 🧮 Prerequisites
 
